@@ -1,7 +1,7 @@
 FROM almalinux
 LABEL AUTOR="PADMASRI" \
       COURSE="DOCKER"
-ENV   ENV="PRD"
+ENV ENV="PRD"
 RUN yum install nginx -y
 RUN rm -rf /usr/share/nginx/html/index.html
 COPY evolve /usr/share/nginx/html/
