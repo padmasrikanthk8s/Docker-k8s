@@ -9,4 +9,4 @@ USER nginx
 WORKDIR /usr/share/nginx/html
 COPY evolve .
 ADD https://github.com/padmasrikanthk8s/Docker-k8s/blob/master/Docker/RREADME.md .
-ENTRYPOINT ["nginx","-g","daemon off;"]
+CMD ["nginx","-g","daemon off;"]
